@@ -1,4 +1,5 @@
 //strings, number (int,float), boolean
+// undefined, null, symbol (ES2015)
 
 let minhaVar = "Minha String"
 let minha_var2 = 'minha "string" com aspas duplas'
@@ -27,3 +28,18 @@ console.log(`o tipo de n2 é ${typeof n2} e o valor é ${n2}`);
 
 const isValid = true;
 console.log(`isValid ${isValid}`);
+
+//undefined, null, symbol 
+
+let varTeste = null;
+console.log(varTeste);
+console.log(typeof varTeste); // Retorna tipo "Object" 
+//por uma falha de implementação do JavaScript 
+
+varTeste = 10;
+console.log(typeof varTeste, varTeste);
+
+let varTeste2 
+console.log(varTeste2);
+console.log(typeof varTeste2);
+
