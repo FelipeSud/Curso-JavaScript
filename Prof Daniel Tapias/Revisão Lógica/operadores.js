@@ -30,3 +30,24 @@ console.log(i);
 let d = 0;
 d--;
 console.log(d);
+
+// Operadores Lógicos
+/* 
+Para uma pessoa viajar para o exterior precisa:
+ Ser maior de 18 anos
+OU
+Estar acompanhado dos pais
+E
+Ter comprado a passagem
+*/
+let idade = 30;
+let paisPresentes = false;
+let comprouPassagem = false;
+const podeViajar = (idade >=18 || paisPresentes === true) && comprouPassagem;
+/* Sobre precedencia de operadores, o && tem preferencia, ou seja
+ele é "feito" primeiro, por isso se quero fazer o || antes, precisa
+envolver no parenteses. Obs.: É a mesma regra que usamos em equações 
+com multiplicação e divisão e colocamos a expressão nos parenteses */
+
+console.log(`Pode viajar?: ${podeViajar}`);
+
